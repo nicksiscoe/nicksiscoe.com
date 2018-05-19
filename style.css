@@ -1,8 +1,26 @@
-header, footer {
+header {
     text-align: center;
     display: block;
-    padding: 75px 75px 40px 75px;
+    padding: 40px 75px 40px 75px;
     position: relative;
+    background-image: url("img/banner.png");
+    -webkit-box-shadow: inset 10px 10px 28px 28px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 10px 10px 28px 28px rgba(0,0,0,0.3);
+    box-shadow: inset 10px 10px 28px 28px rgba(0,0,0,0.3);
+}
+
+.kanban {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 75px 40px 75px;
+  background: #6f86d6;
+  -webkit-box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.6);
+  -moz-box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.6);
+  box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.6);
 }
 
 body {
@@ -10,24 +28,17 @@ body {
 }
 
 h1 {
+  font-family: 'Source Sans Pro', serif;
   font-size: 3em;
   color: #f4f4f4;
-  text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 }
 
 h2 {
-  font-size: 2em;
+  font-family: 'Source Sans Pro', serif;
+  font-size: 2.3em;
   color: #f4f4f4;
   text-align: center;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -36,6 +47,8 @@ h2 {
 }
 
 p {
+  font-family: 'Lato', serif;
+  font-size: 1.2em;
   padding-top: 5px;
   color: #f4f4f4;
 }
@@ -44,7 +57,20 @@ p.description {
   text-align: center;
 }
 
+.profilepic {
+  width: 35%;
+  -webkit-transition: width 0.4s ease-out;
+  -moz-transition: width 0.4s ease-out;
+  -o-transition: width 0.4s ease-out;
+  transition: width 0.4s ease-out;
+}
+
+.profilepic:hover {
+  width: 37%;
+}
+
 .card {
+  font-family: 'Lato', serif;
   margin: 20px auto;
   background-color: #f4f4f4;
   -webkit-box-shadow: 0px 8px 28px -1px rgba(0,0,0,0.3);
@@ -62,11 +88,19 @@ p.description {
   box-shadow: 0px 8px 30px -1px rgba(0,0,0,0.9);
 }
 
+.card-title {
+  font-family: 'Source Sans Pro', serif;
+  font-size: 2em;
+  color: #373737;
+}
+
 .card p {
+  font-family: 'Lato', serif;
   color: #373737;
 }
 
 .btn {
+  font-family: 'Source Sans Pro', serif;
   font-size: 1em;
   border-radius: 0.75em;
   border-width: medium;
@@ -108,6 +142,6 @@ p.description {
 
 .btn-light:hover {
   color: #f4f4f4;
-  background: #48c6ef;
+  background: transparent;
   border-color: #f4f4f4;
 }
