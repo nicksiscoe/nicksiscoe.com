@@ -18,9 +18,9 @@ footer {
   text-align: center;
   padding: 40px 75px 40px 75px;
   background: #6f86d6;
-  -webkit-box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.6);
-  -moz-box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.6);
-  box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.6);
+  -webkit-box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.2);
+  box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.2);
 }
 
 body {
