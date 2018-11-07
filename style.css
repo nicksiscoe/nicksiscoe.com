@@ -90,6 +90,10 @@ p.description {
   color: #373737;
 }
 
+.header-card {
+  max-width: 600px;
+}
+
 .btn {
   font-family: 'Source Sans Pro', serif;
   font-size: 1em;
