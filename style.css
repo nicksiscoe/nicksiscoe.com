@@ -79,6 +79,7 @@ p.description {
   box-shadow: 0px 8px 30px -1px rgba(0,0,0,0.9);
 }
 
+
 .card-title {
   font-family: 'Source Sans Pro', serif;
   font-size: 2em;
@@ -88,6 +89,24 @@ p.description {
 .card p {
   font-family: 'Lato', serif;
   color: #373737;
+}
+
+.card-alert {
+  text-align: center;
+  padding: 10px 16px 2px 16px;
+  background-color: #ff5e5e;
+}
+
+.card-alert a {
+  color: #f4f4f4;
+}
+
+.card-alert a:hover {
+  color: #f4f4f4;
+}
+
+.card-alert p {
+  color: #f4f4f4;
 }
 
 .header-card {
