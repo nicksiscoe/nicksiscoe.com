@@ -16,7 +16,8 @@ footer {
 }
 
 body {
-  background-image: #f4f4f4;
+  background-image: #f9f7f1;
+  background-color: #f9f7f1;
 }
 
 h1 {
@@ -46,8 +47,24 @@ p.description {
   text-align: center;
 }
 
+p.caption {
+  width: 100%;
+  text-align: center;
+  font-size: 1.0em;
+  padding: 6px 10px 0px 10px;
+}
+
 .head {
     align-items: center;
+}
+
+.subhead{
+  text-transform: uppercase;
+  border-bottom: 2px solid #272727;
+  border-top: 2px solid #272727;
+  width: 96%;
+  margin: 0 auto;
+  padding: 6px 4px 0px 4px;
 }
 
 .profilepic {
@@ -59,7 +76,8 @@ p.description {
   font-family: 'Playfair Display', serif;
   margin: 20px auto;
   max-width: 1000px;
-  background-color: #ffffff;
+  background-image: #f9f7f1;
+  background-color: #f9f7f1;
   border: 0 none;
   -webkit-box-shadow: 0px 8px 30px -1px rgba(0,0,0,0.1);
   -moz-box-shadow: 0px 8px 30px -1px rgba(0,0,0,0.1);
@@ -118,12 +136,9 @@ p.description {
   font-family: 'Playfair Display', serif;
   font-size: 1em;
   border-radius: 0.75em;
-  border-width: medium;
   font-weight: bold;
-  -webkit-transition: background-color 0.2s ease;
-  -moz-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
+  background: transparent;
+  border: none;
 }
 
 .btn:hover {
@@ -132,24 +147,23 @@ p.description {
 
 .btn:focus {
   font-size: 1em;
-  color: #ffffff;
-  background: #6f86d6;
-  border-color: #6f86d6;
+  color: #272727;
 }
 
 .btn-primary {
-  color: #ffffff;
-  background: #1be2a1;
-  border-color: #1be2a1;
-  -webkit-box-shadow: 0px 8px 30px -1px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 8px 30px -1px rgba(0,0,0,0.1);
-  box-shadow: 0px 8px 30px -1px rgba(0,0,0,0.1);
+  color: #272727;
 }
 
 .btn-primary:hover {
-  color: #1be2a1;
+  color: #272727;
   background: transparent;
-  border-color: #1be2a1;
+  text-decoration: underline;
+}
+
+.btn-primary:active {
+  color: #272727;
+  background: transparent;
+  text-decoration: underline;
 }
 
 .btn-light {
