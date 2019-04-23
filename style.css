@@ -15,23 +15,34 @@ footer {
   padding: 40px 75px 40px 75px;
 }
 
+footer p {
+  color: #272727;
+}
+
 body {
-  background-image: #f9f7f1;
-  background-color: #f9f7f1;
+  background: url("./img/blob.png");
+  background-image: url("./img/blob.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 800px;
+  background-size: cover;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 4em;
-  color: #272727;
+  color: #f4f4f4;
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 3.3em;
-  color: #272727;
+  color: #f4f4f4;
   text-align: center;
 }
 
@@ -40,7 +51,7 @@ p {
   font-weight: 400;
   font-size: 1.2em;
   padding-top: 5px;
-  color: #272727;
+  color: #f4f4f4;
 }
 
 p.description {
@@ -54,14 +65,40 @@ p.caption {
   padding: 6px 10px 0px 10px;
 }
 
-.head {
-    align-items: center;
+img.polaroid {
+  cursor: pointer;
+  height: 320px;
+  width: 320px;
+  border: solid #fff;
+  object-fit: cover;
+  -webkit-filter: contrast(90%) sepia(60%); /* Safari */
+  filter: contrast(90%) sepia(60%);
+  border-width:10px 10px 40px 10px;
+  -webkit-box-shadow: 0px 8px 30px -1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 8px 30px -1px rgba(0,0,0,0.3);
+  box-shadow: 0px 8px 30px -1px rgba(0,0,0,0.3);
+  top: 0px;
+  -webkit-transition: top 0.4s ease;
+  -moz-transition: top 0.4s ease;
+  -o-transition: top 0.4s ease;
+  transition: top 0.4s ease;
 }
 
-.subhead{
-  text-transform: uppercase;
-  border-bottom: 2px solid #272727;
-  border-top: 2px solid #272727;
+img.polaroid:hover {
+  position: relative;
+  top: -3px;
+}
+
+.head {
+  align-items: center;
+}
+
+.subhead {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 96%;
   margin: 0 auto;
   padding: 6px 4px 0px 4px;
@@ -141,13 +178,8 @@ p.caption {
   border: none;
 }
 
-.btn:hover {
-
-}
-
 .btn:focus {
   font-size: 1em;
-  color: #272727;
 }
 
 .btn-primary {
@@ -166,15 +198,26 @@ p.caption {
   text-decoration: underline;
 }
 
-.btn-light {
-  width: 50%;
-  color: #1be2a1;
-  background: #ffffff;
-  border-color: #ffffff;
+.btn-primary:focus {
+  color: #272727;
 }
 
-.btn-light:hover {
-  color: #ffffff;
+.btn-secondary {
+  color: #f4f4f4;
+}
+
+.btn-secondary:hover {
+  color: #f4f4f4;
   background: transparent;
-  border-color: #ffffff;
+  text-decoration: underline;
+}
+
+.btn-secondary:active {
+  color: #f4f4f4;
+  background: transparent;
+  text-decoration: underline;
+}
+
+.btn-secondary:focus {
+  color: #f4f4f4;
 }
