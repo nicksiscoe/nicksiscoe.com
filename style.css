@@ -7,7 +7,16 @@ header {
 
 .kanban {
   padding-top: 0px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
+  background-color: transparent;
+}
+
+/* colours */
+.color-violet {
+  background-color: #f4f4f4;
+}
+.color-indigo {
+  background-color: #59d5ff;
 }
 
 footer {
@@ -26,6 +35,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  transition: background-color 1s ease;
 }
 
 h1 {
@@ -42,7 +52,7 @@ h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 3.3em;
-  color: #272727;
+  color: #f4f4f4;
   text-align: center;
 }
 
