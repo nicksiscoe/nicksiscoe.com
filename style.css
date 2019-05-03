@@ -5,20 +5,6 @@ header {
     position: relative;
 }
 
-.kanban {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: transparent;
-}
-
-/* colours */
-.color-violet {
-  background-color: #f4f4f4;
-}
-.color-indigo {
-  background-color: #59d5ff;
-}
-
 footer {
   text-align: center;
   padding: 40px 75px 40px 75px;
@@ -29,13 +15,31 @@ footer p {
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #F9EBA2;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
   transition: background-color 1s ease;
+}
+
+.kanban {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.panel {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: transparent;
+}
+
+.color-yellow {
+  background-color: #F9EBA2;
+}
+.color-white {
+  background-color: #f4f4f4;
 }
 
 h1 {
@@ -52,7 +56,7 @@ h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 3.3em;
-  color: #f4f4f4;
+  color: #272727;
   text-align: center;
 }
 
@@ -78,8 +82,10 @@ p.caption {
 
 img.polaroid {
   cursor: pointer;
-  height: 320px;
-  width: 320px;
+  height: 100%;
+  width: 100%;
+  max-height: 320px;
+  max-width: 320px;
   border: solid #fff;
   object-fit: cover;
   -webkit-filter: contrast(90%) sepia(60%); /* Safari */
