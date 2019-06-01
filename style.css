@@ -15,7 +15,7 @@ footer p {
 }
 
 body {
-  background-color: #F9EBA2;
+  background-color: #f4f4f4;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,13 +35,6 @@ body {
   background-color: transparent;
 }
 
-.color-yellow {
-  background-color: #F9EBA2;
-}
-.color-white {
-  background-color: #f4f4f4;
-}
-
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
@@ -57,7 +50,18 @@ h2 {
   font-weight: 900;
   font-size: 3.3em;
   color: #272727;
+  padding-top: 10px;
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.6em;
+  }
 }
 
 p {
@@ -106,6 +110,14 @@ img.polaroid:hover {
   top: -3px;
 }
 
+@media only screen and (max-width: 767px) {
+  img.polaroid {
+    max-height: 260px;
+    max-width: 260px;
+    border-width:7px 7px 30px 7px;
+  }
+}
+
 .head {
   margin: 0;
   height:100vh;
@@ -121,6 +133,7 @@ img.polaroid:hover {
 .subhead {
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -134,9 +147,21 @@ img.polaroid:hover {
   max-width: 300px;
 }
 
+.card-columns {
+  column-count: 2;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
 .card {
+  display: inline-block;
   font-family: 'Playfair Display', serif;
-  margin: 20px auto;
+  margin: 10px auto;
+  width: 100%;
   max-width: 1000px;
   background-image: #f9f7f1;
   background-color: #f9f7f1;
