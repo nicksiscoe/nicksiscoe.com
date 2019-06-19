@@ -24,16 +24,6 @@ body {
   transition: background-color 1s ease;
 }
 
-.bg {
-  width: 100%;
-  min-width: 1000px;
-  position: absolute;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .kanban {
   padding-top: 40px;
   padding-bottom: 20px;
