@@ -15,8 +15,7 @@ footer p {
 }
 
 body {
-  background-image: url('./img/rice-paper.png');
-  background-repeat: repeat;
+  background-color: #f4f4f4;
   position: relative;
   transition: background-color 1s ease;
 }
@@ -195,7 +194,7 @@ img.polaroid:hover {
 .card-alert {
   text-align: center;
   padding: 10px 16px 2px 16px;
-  background-color: #ff5e5e;
+  background-color: #f23838;
 }
 
 .card-alert a {
