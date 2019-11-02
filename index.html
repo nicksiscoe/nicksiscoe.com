@@ -32,6 +32,7 @@
     </script>
     <!-- End of Magnify Widget Snippet -->
 
+
     <title>Nick Siscoe</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -258,4 +259,15 @@
       <p><strong>Nick Siscoe</strong> © 2019</p>
     </footer>
   </body>
+
+      <script>
+        // why it doesn't work on firefox?
+        var card = $(".head");
+
+        $(document).on("mousemove",function(e) {
+          var ax = -($(window).innerWidth()/2- e.pageX)/50;
+          var ay = ($(window).innerHeight()/2- e.pageY)/50;
+          card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
+        });
+      </script>
 </html>
