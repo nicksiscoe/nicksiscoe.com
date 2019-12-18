@@ -1,8 +1,16 @@
+.parent {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 header {
-    text-align: center;
-    display: block;
-    padding: 0px 0px 0px 0px;
-    position: relative;
+  text-align: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 2em 0em 2em 2em;
+  position: fixed;
 }
 
 footer {
@@ -21,8 +29,8 @@ body {
 }
 
 .kanban {
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding: 2em;
+  margin-top: 2em;
 }
 
 .panel {
@@ -98,6 +106,15 @@ img.polaroid {
   top: 0px;
 }
 
+@media only screen and (max-width: 992px) {
+  header {
+    text-align: center;
+    display: block;
+    padding: 2em;
+    position: relative;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   img.polaroid {
     max-height: 260px;
@@ -137,11 +154,23 @@ img.polaroid {
 }
 
 .card-columns {
-  column-count: 2;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+
+@media only screen and (max-width: 1600px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
     column-count: 1;
   }
 }
