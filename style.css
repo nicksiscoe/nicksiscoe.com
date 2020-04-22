@@ -12,8 +12,9 @@ body {
 
 .page {
   width: 100%;
-  max-width: 44em;
+  max-width: 42em;
   margin: 4px auto;
+  padding: 10px 0 40px 0;
 }
 
 .page img {
@@ -33,6 +34,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 60px;
+  margin: 30px 0;
 }
 
 p {
