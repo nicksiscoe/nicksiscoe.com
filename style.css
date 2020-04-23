@@ -12,7 +12,7 @@ body {
 
 .page {
   width: 100%;
-  max-width: 42em;
+  max-width: 44em;
   margin: 4px auto;
   padding: 10px 0 40px 0;
 }
@@ -23,6 +23,14 @@ body {
 
 .page p {
   text-align: justify;
+  line-height: 1.8em;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 h1, h2, h3, p {
@@ -35,6 +43,14 @@ h1 {
   font-style: normal;
   font-size: 60px;
   margin: 30px 0;
+}
+
+h3 {
+  font-family: moret, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  margin: 20px 0;
 }
 
 p {
@@ -76,7 +92,7 @@ a:hover {
   cursor: pointer;
   border-radius: 6px;
   margin: 2px;
-  padding: 4px 8px;
+  padding: 2px 8px;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
@@ -243,4 +259,36 @@ a:hover {
 
 .btn-light-red:active {
   background-color: #ffe6ed;
+}
+
+.btn-mint {
+  color: #30dc9d;
+  background-color: transparent;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.btn-mint:hover {
+  color: #1fcc8c;
+  background-color: #d9fff1;
+}
+
+.btn-mint:active {
+  background-color: #d9fff1;
+}
+
+.btn-green {
+  color: #3db243;
+  background-color: transparent;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.btn-green:hover {
+  color: #2eab35;
+  background-color: #e0ffe2;
+}
+
+.btn-green:active {
+  background-color: #e0ffe2;
 }
