@@ -23,7 +23,6 @@ body {
 
 .page p {
   text-align: justify;
-  line-height: 1.8em;
 }
 
 .notes {
@@ -53,25 +52,32 @@ h3 {
   margin: 20px 0;
 }
 
-p {
-  font-family: roboto-mono, monospace;
+p, li {
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+  line-height: 1.6em;
 }
 
-@media only screen and (max-width: 767px) {
-  h1 {
-    font-size: 50px;
-  }
+.note {
+  margin: 1em 0;
+}
 
-  p {
-    font-size: 17px;
-  }
+.note h3 {
+  margin: 0;
+  padding: 0;
+}
 
-  .btn {
-    font-size: 17px;
-  }
+.note p {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 1px solid #eee;
+  width: 100%;
 }
 
 a {
@@ -85,7 +91,7 @@ a:hover {
 }
 
 .btn {
-  font-family: roboto-mono, monospace;
+  font-family: 'Manrope', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
@@ -106,6 +112,20 @@ a:hover {
 .btn:hover {
   -webkit-transform: scale(0.96);
   transform: scale(0.96)
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  p, li {
+    font-size: 17px;
+  }
+
+  .btn {
+    font-size: 17px;
+  }
 }
 
 .inline-img {
