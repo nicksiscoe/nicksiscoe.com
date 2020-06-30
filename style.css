@@ -455,3 +455,13 @@ a:hover {
   color: transparent;
   -webkit-text-stroke: 1.5px #ff004e;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100px;
+  margin: 0.5em;
+}
