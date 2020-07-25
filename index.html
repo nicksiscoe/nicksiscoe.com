@@ -14,62 +14,255 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/qpo1usu.css">
     <link rel="stylesheet" href="style.css">
     <!--<script type="text/javascript" src="snowstorm.js"></script>-->
   </head>
   <body>
-    <div class="page">
-      <header>
-        <h1>Nick Siscoe</h1>
-        <div class="nav">
-          <a class="btn-nav btn-lighter-red" href="./index.html">About</a>
-          <a class="btn-nav btn-light-red" href="./projects.html">Portfolio</a>
-          <!--<a class="btn-nav btn-light-red" href="./notes.html">Writing</a>-->
-          <a class="btn-nav btn-light-red" href="mailto:nick.siscoe@gmail.com">Contact</a>
-        </div>
-      </header>
-      <div class="content">
-        <div class="description">
-          <p>I'm a full-stack software engineer with experience wearing many hats - engineering, customer discovery/market research, UI design, marketing, and product management.</p>
-          <p>Interested in all kinds of things: design, video production, startups, music, Star Wars, typography, and Husker football, to name a few.</p>
-          <p>Important note: This site is under heavy construction. Don't judge quite yet!</p>
-        </div>
-        <hr/>
-        <div class="cv">
-          <h3>CV</h3>
-          <div class="cv-item">
-            <p><strong>(Upcoming) 2021</strong></p>
-            <p><strong>BA in Computer Science, University of Nebraska, Lincoln</strong></p>
-            <p>Raikes School of Computer Science and Management</p>
-          </div>
-          <div class="cv-item">
-            <p><strong>2019 — PRESENT</strong></p>
-            <p><strong>Co-founder of Findo, Lincoln, Nebraska</strong></p>
-            <p>The money app designed for college students</p>
-          </div>
-          <div class="cv-item">
-            <p><strong>2019 — 2020</strong></p>
-            <p><strong>Product Manager at Tigerpaw, Lincoln, Nebraska</strong></p>
-            <p>Raikes School Design Studio year-long capstone project</p>
-          </div>
-          <div class="cv-item">
-            <p><strong>SUMMER 2019</strong></p>
-            <p><strong>Software Engineer Intern at Hudl, Lincoln, Nebraska</strong></p>
-          </div>
-          <div class="cv-item">
-            <p><strong>SUMMER 2018</strong></p>
-            <p><strong>Software Engineer Intern at PayIt, Kansas City, Missouri</strong></p>
-          </div>
-        </div>
-        <hr/>
-        <img src="http://ghchart.rshah.org/nasiscoe" alt="2016rshah's Github chart" />
-        <hr/>
-      </div>
-      <footer>
-        <p>© 2020 Nick Siscoe
-      </footer>
+    <div class="nav">
+      <a class="active">
+        <p style="margin: 0; padding: 0;"><strong>Home</strong></p>
+      </a>
+      <a href="./portfolio.html" class="btn">
+        <p style="margin: 0; padding: 0;"><strong>Portfolio</strong></p>
+      </a>
     </div>
-    <script type="text/javascript" src="index.js"></script>
+    <header>
+      <img src="./img/me/me15.png" class="header-image" data-aos="flip-left" data-aos-duration="600" data-aos-easing="ease-out-cubic"/>
+      <div class="header-content" data-aos="zoom-out" data-aos-duration="600">
+        <h1>Nick Siscoe</h1>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/nasiscoe/" class="btn" target="_blank">
+            <i class="fab fa-linkedin-in" style="color:#0e76a8;"></i>
+          </a>
+          <a href="https://github.com/nasiscoe" class="btn" target="_blank">
+            <i class="fab fa-github" style="color:#272727;"></i>
+          </a>
+          <a href="https://dribbble.com/nasiscoe" class="btn" target="_blank">
+            <i class="fab fa-dribbble" style="color: #ea4c89;"></i>
+          </a>
+          <a href="https://twitter.com/nasiscoe" class="btn" target="_blank">
+            <i class="fab fa-twitter" style="color: #00acee;"></i>
+          </a>
+          <a href="mailto:nick.siscoe@gmail.com" class="btn" target="_blank">
+            <i class="far fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="content" data-aos="fade-up" data-aos-duration="450" data-aos-easing="ease-out-cubic">
+      <div class="description">
+        <p>👋 Hello! I'm a <a class="btn-purple"><strong>full-stack software engineer</strong></a> with experience in <a class="btn-orange"><strong>customer discovery</strong></a>, <a class="btn-green"><strong>market research</strong></a>, <a class="btn-blue"><strong>UI/UX design</strong></a>, <a class="btn-mint"><strong>marketing</strong></a>, and <a class="btn-light-red"><strong>product management</strong></a>.</p>
+        <p>When I'm not shipping code, I like to admire design, play guitar, read the latest on all things startups, watch anything Star Wars, get up-to-date on Nebraska football recruiting, and indulge in the occasional video game.</p>
+        <p>Important note: This site is under heavy construction. Don't judge quite yet!</p>
+      </div>
+    </div>
+    <div class="cv-outer">
+      <div class="cv">
+        <div class="cv-header">
+          <div class="front-header">
+            <h2>Resume</h2>
+            <p class="context">Jobs, startups, projects, and everything in between.</p>
+          </div>
+          <!--<a class="btn" href="#">Download</a>-->
+        </div>
+        <div class="experience-row">
+          <a href="https://unl.edu" class="btn" target="_blank">
+            <img src="./img/logos/unl.png" style="width: 25px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <div class="front">
+                  <h3>BA in Computer Science</h3>
+                  <p class="location">Lincoln, Nebraska</p>
+                </div>
+                <p class="date">(Upcoming) 2021</p>
+              </div>
+            </div>
+            <p class="position"><strong>Raikes School of Computer Science and Management, UNL</strong></p>
+          </div>
+        </div>
+        <div class="experience-row">
+          <a href="https://getfindo.com" class="btn" target="_blank">
+            <img src="./img/logos/findo.png" style="width: 25px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <div class="front">
+                  <h3>Co-founder</h3>
+                  <p class="location">Lincoln, Nebraska</p>
+                </div>
+                <p class="date">2019 — Present</p>
+              </div>
+            </div>
+            <p class="position"><strong>Findo</strong></p>
+            <p class="experience-description">The money app designed for college students</p>
+          </div>
+        </div>
+        <div class="experience-row">
+          <a href="https://tigerpawsoftware.com" class="btn" target="_blank">
+            <img src="./img/logos/tigerpaw.png" style="width: 25px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <div class="front">
+                  <h3>Product Manager | Design Studio</h3>
+                  <p class="location">Lincoln, Nebraska</p>
+                </div>
+                <p class="date">2019 — 2020</p>
+              </div>
+            </div>
+            <p class="position"><strong>Tigerpaw</strong></p>
+            <p class="experience-description">Raikes School Design Studio year-long capstone project</p>
+          </div>
+        </div>
+        <div class="experience-row">
+          <a href="https://hudl.com" class="btn" target="_blank">
+            <img src="./img/logos/hudl.png" style="width: 25px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <div class="front">
+                  <h3>Software Engineer Intern</h3>
+                  <p class="location">Lincoln, Nebraska</p>
+                </div>
+                <p class="date">Summer 2019</p>
+              </div>
+            </div>
+            <p class="position"><strong>Hudl</strong></p>
+            <p class="experience-description">Capturing and bringing value to every moment in sports</p>
+          </div>
+        </div>
+        <div class="experience-row">
+          <a class="btn-small" target="_blank">
+            <img src="./img/logos/tda.png" style="width: 16px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <p class="position"><strong>TD Ameritrade Tax Search</strong></p>
+                <p class="date">Spring 2019</p>
+              </div>
+            </div>
+            <p class="experience-description">A Raikes School sophomore team project for the TD Ameritrade tax customer support team</p>
+          </div>
+        </div>
+        <div class="experience-row">
+          <a class="btn-small" target="_blank">
+            <img src="./img/logos/unl.png" style="width: 16px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <p class="position"><strong>UNL Dance Marathon Check-In</strong></p>
+                <p class="date">Spring 2019</p>
+              </div>
+            </div>
+            <p class="experience-description">An event check-in system for the largest student-run philanthropy on campus</p>
+          </div>
+        </div>
+        <div class="experience-row">
+          <a href="https://daypaper.herokuapp.com" class="btn-small" target="_blank">
+            <img src="./img/logos/daypaper.png" style="width: 16px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <p class="position"><strong>DayPaper</strong></p>
+                <p class="date">Spring 2019</p>
+              </div>
+            </div>
+            <p class="experience-description">An elegant way to write, every day</p>
+          </div>
+        </div>
+        <div class="experience-row">
+          <a href="https://sponsorwhale.herokuapp.com" class="btn-small" target="_blank">
+            <img src="./img/logos/sponsorwhale.png" style="width: 16px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <p class="position"><strong>SponsorWhale</strong></p>
+                <p class="date">Summer — Fall 2018</p>
+              </div>
+            </div>
+            <p class="experience-description">Affiliate opportunities for influencers, simplified</p>
+          </div>
+        </div>
+        <div class="experience-row">
+          <a href="https://hudl.com" class="btn" target="_blank">
+            <img src="./img/logos/payit.png" style="width: 25px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <div class="front">
+                  <h3>Software Engineer Intern</h3>
+                  <p class="location">Kansas City, Missouri</p>
+                </div>
+                <p class="date">Summer 2018</p>
+              </div>
+            </div>
+            <p class="position"><strong>PayIt</strong></p>
+            <p class="experience-description">Gov-tech startup backed by $100M+ in investment</p>
+          </div>
+        </div>
+        <div class="experience-row">
+          <a class="btn-small" target="_blank">
+            <img src="./img/logos/pradl.png" style="width: 16px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <p class="position"><strong>Pradl</strong></p>
+                <p class="date">Spring 2018</p>
+              </div>
+            </div>
+            <p class="experience-description">A chatbot CRM system for Craigslist sellers and my first (failed) startup</p>
+          </div>
+        </div>
+        <div class="experience-row">
+          <a class="btn-small" target="_blank">
+            <img src="./img/logos/munchy.png" style="width: 16px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <p class="position"><strong>Munchy</strong></p>
+                <p class="date">Spring 2017</p>
+              </div>
+            </div>
+            <p class="experience-description">My first real code — an Android mobile game with a brief stint on the Google Play Store</p>
+          </div>
+        </div>
+        <div class="experience-row">
+          <a class="btn-small" target="_blank">
+            <img src="./img/logos/fam.png" style="width: 16px;"></img>
+          </a>
+          <div class="row-content">
+            <div class="main">
+              <div class="title">
+                <p class="position"><strong>Crazy Joe's Fireworks & Sneads BBQ Websites</strong></p>
+              </div>
+            </div>
+            <p class="experience-description">My grandpa started a fireworks business in 1967. To this day, my family sells fireworks on the corner 171st and Holmes next to Snead's BBQ — started in 1956 — which my family also operates. Some of my earliest "programming" experience was making the first websites for these businesses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Made with ❤️ by Nick Siscoe
+    </footer>
+    <script>
+      AOS.init();
+    </script>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
