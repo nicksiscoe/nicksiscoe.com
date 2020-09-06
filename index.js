@@ -1,4 +1,5 @@
-/*  clock */
-const hours = document.querySelector('.hours');
-const minutes = document.querySelector('.minutes');
-const seconds = document.querySelector('.seconds');
+var waterfall = new Waterfall({ 
+    containerSelector: '.wf-container',
+    boxSelector: '.wf-box',
+    minBoxWidth: 250
+});
