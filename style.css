@@ -26,8 +26,8 @@ html {
   background:
     radial-gradient(ellipse at center, rgba(0,0,255,1) 0%, rgba(0,0,255,0) 70%), /* niebieski */
     radial-gradient(ellipse at center, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 70%), /*czerwony */
-    radial-gradient(ellipse at center, rgba(0,255,0,1) 0%, rgba(0,255,0,0) 70%) /*zielony */
-    #c3d7db;
+    radial-gradient(ellipse at center, rgba(0,255,0,1) 0%, rgba(0,255,0,0) 90%) /*zielony */
+    rgba(0,0,255,1);
   background-repeat:
     no-repeat,
     no-repeat,
@@ -38,7 +38,7 @@ html {
     900px 900px;
   background-attachment: fixed;
 
-  animation:bganimation 20s infinite;
+  animation:bganimation 10s infinite;
 }
 
 .nav {
@@ -56,10 +56,11 @@ body {
   margin: 20px;
   padding: 0;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 690px) {
-  body { margin: 8px; }
+  body { margin: 12px; }
 }
 
 header {
