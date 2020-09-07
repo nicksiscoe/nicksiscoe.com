@@ -515,6 +515,11 @@ a:hover {
   background: transparent;
 }
 
+.wf-box .testimonial-content h2 {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
 .wf-box .testimonial-content h3 {
   font-size: 1em;
   font-weight: 900;
@@ -522,8 +527,7 @@ a:hover {
 }
 
 .wf-box .testimonial-content p {
-  font-size: 1.4em;
-  font-style: italic;
+  font-size: 1.3em;
   color: #272727;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -547,6 +551,7 @@ a:hover {
   position: relative;
   width: auto;
   background: transparent;
+  cursor: pointer;
   box-shadow:
   -7px -7px 20px 0px #fff,
   -4px -4px 5px 0px #fff,
