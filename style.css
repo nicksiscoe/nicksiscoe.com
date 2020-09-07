@@ -762,6 +762,7 @@ a:hover {
   margin: 0;
   padding: 0;
   padding-top: 0.3em;
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .btn {
