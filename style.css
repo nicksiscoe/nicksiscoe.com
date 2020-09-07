@@ -6,7 +6,7 @@
      -100% 200%,
      200% -100%;
   }
-  50% {
+  70% {
    background-position:
      150% 100%,
      -200% 100%,
@@ -38,7 +38,7 @@ html {
     900px 900px;
   background-attachment: fixed;
 
-  animation:bganimation 10s infinite;
+  animation:bganimation 7s infinite;
 }
 
 .nav {
@@ -88,6 +88,18 @@ header {
   margin-top: 50px;
   background: #F0F0F0;
   box-sizing: border-box;
+  overflow: hidden !important;
+  text-overflow: hidden !important;
+}
+
+.technical-content {
+  position: relative;
+  margin-top: 50px;
+  background: #F0F0F0;
+  box-sizing: border-box;
+  overflow: hidden !important;
+  text-overflow: hidden !important;
+  box-shadow: inset -20px 10px 20px 10px rgba(0, 0, 0, 0.05);
 }
 
 .description {
@@ -99,6 +111,20 @@ header {
 }
 
 .description p {
+  font-size: 1.4em;
+}
+
+.technical-description {
+  width: 100%;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 7em 1em;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2 !important;
+}
+
+.technical-description p {
   font-size: 1.4em;
 }
 
@@ -796,7 +822,7 @@ a:hover {
   inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
 }
 
-.active{
+.active {
   font-family: "basic-sans", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -828,6 +854,30 @@ a:hover {
   inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
 }
 
+.background {
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  width: 150%;
+  height: 100%;
+  white-space: "";
+  text-overflow: hidden;
+  z-index: 0 !important;
+}
+
+.background p {
+  display: inline-block;
+  font-size: 2em !important;
+  color: rgba(0, 0, 0, 0.1);
+  margin: 0.125em 0.25em 0.125em 0.2em;
+}
+
+@media screen and (max-width: 768px) {
+  .background p {
+    font-size: 1.5em !important;
+  }
+}
+
 .github-frame {
   width: auto;
   box-shadow:
@@ -842,10 +892,16 @@ a:hover {
   border-radius: 10px;
   margin: 0 auto;
   padding: 1em;
+  background: #f4f4f4;
 }
 
 .github-frame img {
   width: 100%;
+}
+
+.github-frame h3 {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .header-image {
