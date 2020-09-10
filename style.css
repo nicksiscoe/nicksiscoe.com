@@ -24,9 +24,9 @@
 
 html {
   background:
-    radial-gradient(ellipse at center, rgba(0,0,255,1) 0%, rgba(0,0,255,0) 70%), /* niebieski */
-    radial-gradient(ellipse at center, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 70%), /*czerwony */
-    radial-gradient(ellipse at center, rgba(0,255,0,1) 0%, rgba(0,255,0,0) 90%) /*zielony */
+    radial-gradient(ellipse at center, rgba(0,0,255,1) 0%, rgba(0,0,255,0) 75%), /* niebieski */
+    radial-gradient(ellipse at center, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 75%), /*czerwony */
+    radial-gradient(ellipse at center, rgba(0,255,0,1) 0%, rgba(0,255,0,0) 75%) /*zielony */
     rgba(0,0,255,1);
   background-repeat:
     no-repeat,
