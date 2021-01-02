@@ -931,8 +931,60 @@ a:hover {
 }
 
 footer {
+  background-color: #f4f4f4;
   width: 100%;
   margin: auto;
   text-align: center;
-  padding-bottom: 1em;
+  padding: 1em;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+iframe {    
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  box-shadow:
+  -7px -7px 20px 0px #fff,
+  -4px -4px 5px 0px #fff,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001,
+  inset 0px 0px 0px 0px #fff,
+  inset 0px 0px 0px 0px #0001,
+  inset 0px 0px 0px 0px #fff,        inset 0px 0px 0px 0px #0001;
+  width: 40%;
+  height: 300px;
+  padding: 30px;
+  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+}
+
+@media screen and (max-width: 1200px) {
+  iframe {    
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  iframe {    
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  iframe {    
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  iframe {    
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  iframe {    
+    width: 90%;
+  }
 }
