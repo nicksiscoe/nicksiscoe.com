@@ -770,6 +770,47 @@ a:hover {
   color: rgba(0, 0, 0, 0.6) !important;
 }
 
+.top-button-div {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.new-top-button {
+  font-family: 'basic-sans', sans-serif;
+  font-weight: 700;
+  border-radius: 12px !important;
+  background: #f4f4f4;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow:
+  -7px -7px 20px 0px #fff,
+  -4px -4px 5px 0px #fff,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001,
+  inset 0px 0px 0px 0px #fff,
+  inset 0px 0px 0px 0px #0001,
+  inset 0px 0px 0px 0px #fff,        inset 0px 0px 0px 0px #0001;
+  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  font-size: 16px;
+  color: rgba(42, 52, 84, 0.4);
+  text-decoration: none;
+  padding: 0.8em 1em;
+  margin: 0 4px;
+}
+
+.new-top-button:active{
+  box-shadow:
+  4px 4px 6px 0 rgba(255,255,255,.5),
+  -4px -4px 6px 0 rgba(116, 125, 136, .2),
+  inset -4px -4px 6px 0 rgba(255,255,255,.5),
+  inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
 .btn {
   border-radius: 12px !important;
   background: #f4f4f4;
