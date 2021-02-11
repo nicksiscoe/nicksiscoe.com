@@ -37,7 +37,7 @@ body {
 .gallery__item-img {
 	border-radius: 1em;
 	grid-area: gallery-image;
-	width: 100%;
+	width: 150%;
 	height: 100%;
 	overflow: hidden;
 	position: relative;
@@ -47,7 +47,8 @@ body {
 .gallery__item-imginner {
 	border-radius: 1em;
 	background-size: cover;
-    background-position: 50% 0;
+	object-fit: cover;
+    background-position: 50% 50% !important;
 	width: calc(100%);
 	margin-left: -5vw;
     height: 100%;
@@ -125,8 +126,7 @@ body {
 .gallery__text {
 	font-size: 20vw;
 	line-height: 0.8;
-	margin: 0 12vw;
-	text-transform: lowercase;
+	margin: 0 16vw;
 	color: transparent;
 	-webkit-text-stroke: 1px #ffaa00;
 	text-stroke: 1px #ffaa00;
@@ -134,8 +134,37 @@ body {
 	text-fill-color: transparent;
 }
 
+.gallery__small-text-inner {
+	display: block;
+}
+
+.gallery__small-text {
+	position: relative;
+	word-break: break-all;
+	width: 100%;
+	max-width: 20em;
+	font-size: 3vw;
+	line-height: 1.25;
+	margin: 0 10vw;
+	color: var(--color-gallery-title);
+	font-family: halyard-display, sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	align-self: center;
+}
+
 .gallery__text-inner {
 	display: block;
+}
+
+strong {
+	color: var(--color-bg);
+	z-index: 0;
+	background-color: var(--color-link);
+	font-weight: 700 !important;
+	margin: 0;
+	border-radius: 20px;
+	padding: 0px 10px 10px 10px;
 }
 
 @media screen and (min-width: 53em) {
