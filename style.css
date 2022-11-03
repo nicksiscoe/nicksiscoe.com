@@ -79,8 +79,40 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   box-sizing: border-box;
+  max-width: 30em;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: #ededed;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #696969;
+  font-family: "basic-sans", sans-serif;
+  font-size: 1em;
+  padding: 4px 6px;
+  transition: all 0.1s ease-out;
+  border: solid 0.5px rgba(0, 0, 0, 0.1);
+}
+
+.tag:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 700px) {
+  .header-content { align-items: center; }
+  .tags { justify-content: center; }
 }
 
 .content {
@@ -684,7 +716,7 @@ a:hover {
   transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
   border-radius: 10px;
   padding: 1em;
-  margin: 0 auto;
+  margin-top: 16px;
 }
 
 .cv-outer {
